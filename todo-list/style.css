@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+
 *{
     box-sizing: border-box;
 }
@@ -6,12 +9,19 @@ body{
     margin: 0;
     padding: 0;;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #e7e7e7;
+    background-color: #e6e6e6;
 }
 
 h1{
     text-align: center;
     font-size: 3rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+#img{
+    width: 50px;
+    padding: 5px;
+    margin-bottom: -7px;
 }
 
 header{
@@ -31,12 +41,13 @@ input{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-bottom: 20px;
+    outline: 0;
 }
 
 button.add{
     width: 20%;
     cursor: pointer;
-    background: green;
+    background: #378531;
     color: white;
     font-weight: bold;
     border: none;
@@ -69,7 +80,7 @@ main{
 }
 
 .item.clicado{
-    background: #c8ffbd;
+    background: #E2FFC5;
 }
 
 .item.clicado .item-nome{
@@ -96,17 +107,31 @@ main{
 }
 
 .delete{
-    background: red;
+    background: #853131;
     color: white;
     border: none;
     padding: 10px 30px;
-    height: 80px;
+    height: 40px;
     width: 100%;
-    border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
 }
 
 .fa-circle-check{
-    color: green;
+    color: #378531;
+}
+
+.editando {
+    background-color: #FFFFE0;
+}
+
+.edit{
+    background: #868686;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    height: 40px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    cursor: pointer;
 }

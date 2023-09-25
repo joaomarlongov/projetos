@@ -19,6 +19,7 @@ function addTarefa(){
                 ${valorInput}
             </div>
             <div class="item-botao">
+                <button onclick="editarTarefa(${contador})" class="edit"><i class="fa-solid fa-edit"></i> Editar</button>
                 <button onclick="deletar(${contador})" class="delete"><i class="fa-solid fa-trash"></i> Deletar</button>
             </div>
         </div>
@@ -28,6 +29,16 @@ function addTarefa(){
 
         input.value = ""
         input.focus();
+    }
+}
+
+function editarTarefa(id) {
+    let item = document.getElementById(id);
+    let nomeItem = item.querySelector('.item-nome');
+    let novoTexto = prompt("Editar tarefa:", nomeItem.innerText);
+
+    if (novoTexto !== null) { // Verifica se o usuário não cancelou a edição
+        nomeItem.innerText = novoTexto;
     }
 }
 
